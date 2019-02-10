@@ -1,5 +1,5 @@
 *.txt
-*.xml
+response.xml
 .idea
 target
 *.iml
