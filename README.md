@@ -12,7 +12,7 @@ Technologies Used :
 To run this program, follow these steps :
 
 1. Install SoundTouch App on your smartphone if you don't have it already. You'll need this to get the SoundTouch Device's IP Address.
-![SoundTouch iOS Link](https://www.globalvillage.ae/wp-content/uploads/2015/01/app-store-icon.png)
+[![SoundTouch iOS Link](https://www.globalvillage.ae/wp-content/uploads/2015/01/app-store-icon.png)](https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8)
 
 2. Connect to your device via the SoundTouch App.
 3. Once you've connected to the SoundTouch device via the app, go to setting of the device in the SoundTouch App
