@@ -16,26 +16,30 @@ public class ParseXml {
         DocumentBuilder db = dbf.newDocumentBuilder();
         ByteArrayInputStream bis = new ByteArrayInputStream(xml.getBytes());
         Document doc = db.parse(bis);
-        Node n = doc.getFirstChild();
-        NodeList nl = n.getChildNodes();
-        Node an,an2;
+        Node node = doc.getFirstChild();
+        NodeList nodeList = node.getChildNodes();
+        Node node1,node2;
 
-        for (int i=0; i < nl.getLength(); i++) {
-            an = nl.item(i);
-            if(an.getNodeType()==Node.ELEMENT_NODE) {
-                NodeList nl2 = an.getChildNodes();
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            node1 = nodeList.item(i);
+            if( node1.getNodeType() == Node.ELEMENT_NODE ) {
+                NodeList node1ChildNodes = node1.getChildNodes();
 
-                for(int i2=0; i2<nl2.getLength(); i2++) {
-                    an2 = nl2.item(i2);
+                for(int j=0; j < node1ChildNodes.getLength(); j++) {
+                    node2 = node1ChildNodes.item(j);
+
                     // DEBUG PRINTS
-                    System.out.println(an2.getNodeName() + ": type (" + an2.getNodeType() + "):");
-                    if(an2.hasChildNodes()) {
-                        System.out.println(an2.getFirstChild().getTextContent());
-                    } if(an2.hasChildNodes()) {
-                        System.out.println(an2.getFirstChild().getNodeValue());
+
+                    System.out.println(node2.getNodeName() + ": type (" + node2.getNodeType() + "):");
+
+                    if( node2.hasChildNodes() ) {
+                        System.out.println( node2.getFirstChild().getTextContent() );
+                    } if( node2.hasChildNodes() ) {
+                        System.out.println( node2.getFirstChild().getNodeValue() );
                     }
-                    System.out.println(an2.getTextContent());
-//                    System.out.println(an2.getNodeValue());
+
+                    System.out.println( node2.getTextContent() );
+                    //System.out.println(node2.getNodeValue());
                 }
             }
         }
