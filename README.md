@@ -1,7 +1,7 @@
 # Bose-SoundTouch-API
 Bose SoundTouch API
 
-Technologies Used :
+## Technologies Used :
 
 * [Java](https://www.java.com/en/)
 * [Maven](https://maven.apache.org)
@@ -9,11 +9,16 @@ Technologies Used :
 * [OkHttp](https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp/2.7.5)
 * [Okio](https://mvnrepository.com/artifact/com.squareup.okio/okio/2.1.0)
 
-To run this program, follow these steps :
+## Steps to run the program :
 
 1. Install SoundTouch App on your smartphone if you don't have it already. You'll need this to get the SoundTouch Device's IP Address.
 <!-- [![](https://www.globalvillage.ae/wp-content/uploads/2015/01/app-store-icon.png)](https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8) -->
-Link to [iOS App](https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8) and link to [Android App](https://play.google.com/store/apps/details?id=com.bose.soundtouch&hl=en_US)
+<div>
+<a href='https://play.google.com/store/apps/details?id=com.bose.soundtouch&hl=en_US'><img alt='Get it on Google Play' src='assets/google_play.png' height='48px'/></a>
+<a href='https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8'><img alt='Get it on the App Store' src='assets/app_store.png' height='48px'/></a>
+</div>
+
+<!-- Link to [iOS App](https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8) and link to [Android App](https://play.google.com/store/apps/details?id=com.bose.soundtouch&hl=en_US) -->
 
 2. Connect to your device via the SoundTouch App.
 3. Once you've connected to the SoundTouch device via the app, go to setting of the device in the SoundTouch App
@@ -61,6 +66,8 @@ java -jar target/remote-control-1.0-jar-with-dependencies.jar volume <desired vo
 
 java -jar target/remote-control-1.0-jar-with-dependencies.jar volume 20
 ```
+
+## API Reference :
 
 For more such commands go to [Bose Developer Portal](https://developer.bose.com/guides/bose-soundtouch-api/bose-soundtouch-api-reference) where you'll find a bunch of API calls that you can make calls to, and enter those as the endpoints to the program in place of <EndPoint as Argument>.
 
