@@ -9,13 +9,15 @@ Bose SoundTouch API
 * [OkHttp](https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp/2.7.5)
 * [Okio](https://mvnrepository.com/artifact/com.squareup.okio/okio/2.1.0)
 
-## Obtain IP Address of the SoundTouch Device :
+## Download SoundTouch App to get IP Address of SoundTouch Device :
 
 Install SoundTouch App on your smartphone if you don't have it already. You'll need this to get the SoundTouch Device's IP Address.
 <!-- [![](https://www.globalvillage.ae/wp-content/uploads/2015/01/app-store-icon.png)](https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8) -->
 <div>
+<center>
 <a href='https://play.google.com/store/apps/details?id=com.bose.soundtouch&hl=en_US'><img alt='Get it on Google Play' src='assets/google_play.png' height='48px'/></a>
 <a href='https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8'><img alt='Get it on the App Store' src='assets/app_store.png' height='48px'/></a>
+</center>
 </div>
 
 <!-- Link to [iOS App](https://itunes.apple.com/us/app/bose-soundtouch/id708379313?mt=8) and link to [Android App](https://play.google.com/store/apps/details?id=com.bose.soundtouch&hl=en_US) -->
@@ -34,6 +36,7 @@ Example :
 http://127.0.0.1:8090
 ```
 This will prompt you to enter a network password. Enter the password of the router that the soundtouch device is connected to via the soundtouch app.
+
 5. Now fork / clone this repository
 6. Create a text file in the cloned directory, and save the IP Address retrieved in step 5. And save the filename as ```IPAddress.txt```
 Save the IP Address in the following format :
