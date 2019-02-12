@@ -8,19 +8,17 @@ import boseapi.ReadWriteFile;
 
 public class XmlToJson {
 
-    public static String convertXmlToJson(String xmlString) throws Exception {
-        String resultJson = null;
+    public static JSONObject convertXmlToJson(String xmlString) throws Exception {
+        JSONObject xmlJSONObj = null;
         try {
-            JSONObject xmlJSONObj = XML.toJSONObject(xmlString);
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            resultJson = gson.toJson(xmlJSONObj);
+            xmlJSONObj = XML.toJSONObject(xmlString);
 
             String filename = "response.json";
             ReadWriteFile readWriteFile = new ReadWriteFile();
-            readWriteFile.usingFileWriter(filename, resultJson);
+            readWriteFile.usingFileWriter(filename, xmlJSONObj.toString());
         } catch (JSONException je) {
             System.out.println(je.toString());
         }
-        return resultJson;
+        return xmlJSONObj;
     }
 }

@@ -1,5 +1,7 @@
 package boseapi;
 
+import org.json.JSONObject;
+
 /**
  * Bose SoundTouch API
  **/
@@ -10,18 +12,14 @@ public class Main {
 
         BoseSoundTouch boseSoundTouch = new BoseSoundTouch();
 
-        if (args != null || args.length > 0) {
-            boseSoundTouch.setIP(args[0]);
-        }
-
-        String volume = boseSoundTouch.getVolume();
+        JSONObject volume = boseSoundTouch.getVolume();
 
         System.out.println("Current Volume is : " + volume);
 
-        String bass = boseSoundTouch.getBass();
+        JSONObject bass = boseSoundTouch.getBass();
         System.out.println("Current Bass is : " + bass);
 
-        String now_playing = boseSoundTouch.getNowPlaying();
+        JSONObject now_playing = boseSoundTouch.getNowPlaying();
         System.out.println("Now Playing : " + now_playing);
     }
 }

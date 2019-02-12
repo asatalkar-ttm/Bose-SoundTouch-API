@@ -1,18 +1,16 @@
 package boseapi;
 
-import XmlToJson.XmlToJson;
+import org.json.JSONObject;
 
 public class BoseSoundTouch {
 
     public String IPAddress = null;
-    public String volume = null;
-    public String bass = null;
-    public String nowPlaying = null;
+    public JSONObject volume = null;
+    public JSONObject bass = null;
+    public JSONObject nowPlaying = null;
 
-    public String getVolume() throws Exception {
-        XmlToJson xmlToJson = new XmlToJson();
+    public JSONObject getVolume() throws Exception {
         this.volume = ApiCall.getEndPoint(getIP(),"volume");
-        this.volume = xmlToJson.convertXmlToJson(this.volume);
         return this.volume;
     }
 
@@ -21,10 +19,8 @@ public class BoseSoundTouch {
         this.volume = getVolume();
     }
 
-    public String getBass() throws Exception {
-        XmlToJson xmlToJson = new XmlToJson();
+    public JSONObject getBass() throws Exception {
         this.bass = ApiCall.getEndPoint(getIP(),"bass");
-        this.bass = xmlToJson.convertXmlToJson(this.bass);
         return this.bass;
     }
 
@@ -33,10 +29,8 @@ public class BoseSoundTouch {
         this.bass = getBass();
     }
 
-    public String getNowPlaying() throws Exception {
-        XmlToJson xmlToJson = new XmlToJson();
+    public JSONObject getNowPlaying() throws Exception {
         this.nowPlaying = ApiCall.getEndPoint(getIP(), "now_playing");
-        this.nowPlaying = xmlToJson.convertXmlToJson(this.nowPlaying);
         return this.nowPlaying;
     }
 

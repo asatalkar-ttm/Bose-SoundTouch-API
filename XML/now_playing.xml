@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nowPlaying deviceID="64CFD9E7CED2" source="SPOTIFY" sourceAccount="12135846015">
+    <ContentItem source="SPOTIFY" type="uri" location="spotify:station:user:12135846015:playlist:60SguIX2FQYxeQDkj3KFcQ" sourceAccount="12135846015" isPresetable="true">
+        <itemName>God Is An Astronaut</itemName>
+    </ContentItem>
+    <track>Wolmar</track>
+    <artist>Audrey Fall</artist>
+    <album>Mitau</album>
+    <stationName></stationName>
+    <art artImageStatus="IMAGE_PRESENT">http://i.scdn.co/image/f215b9414a6c60de5b63943d31e24f552221fa01</art>
+    <time total="380">267</time>
+    <skipEnabled />
+    <favoriteEnabled />
+    <playStatus>PLAY_STATE</playStatus>
+    <shuffleSetting>SHUFFLE_OFF</shuffleSetting>
+    <repeatSetting>REPEAT_OFF</repeatSetting>
+    <skipPreviousEnabled />
+    <streamType>TRACK_ONDEMAND</streamType>
+    <trackID>spotify:track:0JCnSBBGsougr5rRgDKob2</trackID>
+</nowPlaying>

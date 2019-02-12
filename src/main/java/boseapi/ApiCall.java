@@ -1,6 +1,8 @@
 package boseapi;
 
+import XmlToJson.XmlToJson;
 import com.squareup.okhttp.*;
+import org.json.JSONObject;
 
 /**
  * Bose SoundTouch API
@@ -13,7 +15,8 @@ public class ApiCall {
     private static final String CONTENTTYPE = "Content-Type";
     private static final String APPLICATIONTYPE = "application/xml";
 
-    public static String getEndPoint(String ipAddress, String endPoint) throws Exception {
+    public static JSONObject getEndPoint(String ipAddress, String endPoint) throws Exception {
+        XmlToJson xmlToJson = new XmlToJson();
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(ipAddress + ":8090/" + endPoint)
@@ -23,7 +26,7 @@ public class ApiCall {
         Response response = client.newCall(request).execute();
         String responseString = response.body().string();
         System.out.println("get" + endPoint + " response code : " + response.code());
-        return responseString;
+        return xmlToJson.convertXmlToJson(responseString);
     }
 
     public static void setEndPointValue(String ipAddress, String endPoint, String value) throws Exception {
