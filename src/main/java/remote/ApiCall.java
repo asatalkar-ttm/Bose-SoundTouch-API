@@ -13,7 +13,7 @@ public class ApiCall {
     private static final String CONTENTTYPE = "Content-Type";
     private static final String APPLICATIONTYPE = "application/xml";
 
-    public String getEndPoint(String ipAddress, String endPoint) throws Exception {
+    public static String getEndPoint(String ipAddress, String endPoint) throws Exception {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(ipAddress + ":8090/" + endPoint)
@@ -26,7 +26,7 @@ public class ApiCall {
         return responseString;
     }
 
-    public void setEndPointValue(String ipAddress, String endPoint, String value) throws Exception {
+    public static void setEndPointValue(String ipAddress, String endPoint, String value) throws Exception {
         OkHttpClient client = new OkHttpClient();
         MediaType mediaType = MediaType.parse(APPLICATIONTYPE);
         RequestBody body = RequestBody.create(mediaType, "<"+endPoint+">"+ value +"</"+endPoint+">");
