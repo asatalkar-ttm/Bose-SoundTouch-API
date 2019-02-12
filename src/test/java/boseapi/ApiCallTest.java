@@ -1,4 +1,4 @@
-package remote;
+package boseapi;
 
 import static org.junit.Assert.assertTrue;
 

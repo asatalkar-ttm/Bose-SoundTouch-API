@@ -1,4 +1,4 @@
-package remote;
+package boseapi;
 
 public class WasMain {
 

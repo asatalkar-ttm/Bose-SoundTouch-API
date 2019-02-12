@@ -4,9 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.json.*;
 import org.json.XML;
-import remote.ReadWriteFile;
-
-import java.io.File;
+import boseapi.ReadWriteFile;
 
 public class XmlToJson {
 

@@ -8,7 +8,7 @@
   <artifactId>remote-control</artifactId>
   <version>1.0</version>
 
-  <name>remote-control</name>
+  <name>boseapi-control</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -61,7 +61,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>remote.Main</mainClass>
+              <mainClass>boseapi.Main</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>

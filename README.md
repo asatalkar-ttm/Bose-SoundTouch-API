@@ -55,11 +55,11 @@ This will build the BIG FAT JAR that we'll use to run the program
 ```
 Syntax :
 
-java -jar target/remote-control-1.0-jar-with-dependencies.jar <EndPoint as Argument>
+java -jar target/boseapi-control-1.0-jar-with-dependencies.jar <EndPoint as Argument>
 
 Example :
 
-java -jar target/remote-control-1.0-jar-with-dependencies.jar volume
+java -jar target/boseapi-control-1.0-jar-with-dependencies.jar volume
 ```
 
 This example command will return the volume of your soundtouch device.
@@ -67,9 +67,9 @@ This example command will return the volume of your soundtouch device.
 To set the volume enter the following command
 
 ```
-java -jar target/remote-control-1.0-jar-with-dependencies.jar volume <desired volume level>
+java -jar target/boseapi-control-1.0-jar-with-dependencies.jar volume <desired volume level>
 
-java -jar target/remote-control-1.0-jar-with-dependencies.jar volume 20
+java -jar target/boseapi-control-1.0-jar-with-dependencies.jar volume 20
 ```
 
 ## API Reference :

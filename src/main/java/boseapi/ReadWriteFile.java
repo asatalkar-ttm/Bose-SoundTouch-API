@@ -1,4 +1,4 @@
-package remote;
+package boseapi;
 
 import java.io.File;
 import java.io.FileWriter;
