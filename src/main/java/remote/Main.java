@@ -1,5 +1,8 @@
 package remote;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 /**
  * Bose SoundTouch API
  **/
@@ -15,19 +18,17 @@ public class Main {
             boseSoundTouch.setIP(args[0]);
         }
 
-        ParseXml parseXml = new ParseXml();
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         String volume = boseSoundTouch.getVolume();
-        System.out.println("Current Volume is : ");
-        parseXml.parse(volume);
+
+        System.out.println("Current Volume is : " + volume);
 
         String bass = boseSoundTouch.getBass();
-        System.out.println("Current Bass is : ");
-        parseXml.parse(bass);
+        System.out.println("Current Bass is : " + bass);
 
         String now_playing = boseSoundTouch.getNowPlaying();
-        System.out.println("Now Playing : ");
-        parseXml.parse(now_playing);
+        System.out.println("Now Playing : " + now_playing);
     }
 
     public static void main2(String[] args ) {

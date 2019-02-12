@@ -1,0 +1,46 @@
+{
+  "map": {
+    "nowPlaying": {
+      "map": {
+        "art": {
+          "map": {
+            "artImageStatus": "IMAGE_PRESENT",
+            "content": "http://i.scdn.co/image/65028eac77df4481fb86a667ed677ca2d290b90f"
+          }
+        },
+        "sourceAccount": 12135846015,
+        "artist": "Collapse Under The Empire",
+        "album": "Shoulders \u0026 Giants",
+        "trackID": "spotify:track:411uGyNINNY9BUrpLHxnkj",
+        "skipEnabled": "",
+        "source": "SPOTIFY",
+        "shuffleSetting": "SHUFFLE_OFF",
+        "deviceID": "64CFD9E7CED2",
+        "skipPreviousEnabled": "",
+        "repeatSetting": "REPEAT_OFF",
+        "playStatus": "PLAY_STATE",
+        "streamType": "TRACK_ONDEMAND",
+        "stationName": "",
+        "time": {
+          "map": {
+            "total": 353,
+            "content": 32
+          }
+        },
+        "track": "The Last Reminder",
+        "favoriteEnabled": "",
+        "ContentItem": {
+          "map": {
+            "isPresetable": true,
+            "itemName": "God Is An Astronaut",
+            "sourceAccount": 12135846015,
+            "location": "spotify:station:user:12135846015:playlist:60SguIX2FQYxeQDkj3KFcQ",
+            "source": "SPOTIFY",
+            "type": "uri"
+          }
+        },
+        "isFavorite": ""
+      }
+    }
+  }
+}
