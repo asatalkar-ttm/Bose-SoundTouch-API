@@ -67,9 +67,9 @@ This example command will return the volume of your soundtouch device.
 To set the volume enter the following command
 
 ```
-java -jar target/boseapi-control-1.0-jar-with-dependencies.jar volume <desired volume level>
+java -jar target/boseapi-1.0-jar-with-dependencies.jar volume <desired volume level>
 
-java -jar target/boseapi-control-1.0-jar-with-dependencies.jar volume 20
+java -jar target/boseapi-1.0-jar-with-dependencies.jar volume 20
 ```
 
 ## API Reference :

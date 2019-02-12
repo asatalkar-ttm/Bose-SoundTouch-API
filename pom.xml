@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>remote-control</groupId>
-  <artifactId>remote-control</artifactId>
+  <artifactId>boseapi</artifactId>
   <version>1.0</version>
 
   <name>boseapi-control</name>
