@@ -1,5 +1,49 @@
 # Bose-SoundTouch-API
-Bose SoundTouch API
+Bose SoundTouch API that returns JSON. current implementations include :
+
+* getVolume()
+
+```$xslt
+{
+  "nowPlaying": {
+    "source": "STANDBY",
+    "deviceID": "<DEVICE ID>",
+    "ContentItem": {
+      "isPresetable": true,
+      "source": "STANDBY"
+    }
+  }
+}
+```
+
+* setVolume()
+* getBass()
+
+```$xslt
+{
+  "bass": {
+    "targetbass": 0,
+    "deviceID": "<DEVICE ID>",
+    "actualbass": 0
+  }
+}
+```
+
+* setBass()
+* getNowPlaying()
+
+```$xslt
+{
+  "nowPlaying": {
+    "source": "STANDBY",
+    "deviceID": "<DEVICE ID>",
+    "ContentItem": {
+      "isPresetable": true,
+      "source": "STANDBY"
+    }
+  }
+}
+```
 
 ## Technologies Used :
 
@@ -8,6 +52,8 @@ Bose SoundTouch API
 * [Bose SoundTouch API](https://developer.bose.com/guides/bose-soundtouch-api/bose-soundtouch-api-reference)
 * [OkHttp](https://mvnrepository.com/artifact/com.squareup.okhttp/okhttp/2.7.5)
 * [Okio](https://mvnrepository.com/artifact/com.squareup.okio/okio/2.1.0)
+* [JSON](https://mvnrepository.com/artifact/org.json/json/20180130)
+* [Gson](https://mvnrepository.com/artifact/com.google.code.gson/gson/2.8.5)
 
 ## Download SoundTouch App to get IP Address of SoundTouch Device :
 
