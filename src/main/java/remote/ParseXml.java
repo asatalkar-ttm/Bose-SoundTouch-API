@@ -1,6 +1,7 @@
 package remote;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -29,8 +30,8 @@ public class ParseXml {
                     node2 = node1ChildNodes.item(j);
 
                     // DEBUG PRINTS
-
-                    System.out.println(node2.getNodeName() + ": type (" + node2.getNodeType() + "):");
+                    Element element = (Element)nodeList.item(i);
+                    System.out.println(element.getNodeName() + " : ");
 
                     if( node2.hasChildNodes() ) {
                         System.out.println( node2.getFirstChild().getTextContent() );
