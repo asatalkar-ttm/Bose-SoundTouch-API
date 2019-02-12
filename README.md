@@ -5,13 +5,11 @@ Bose SoundTouch API that returns JSON. current implementations include :
 
 ```$xslt
 {
-  "nowPlaying": {
-    "source": "STANDBY",
-    "deviceID": "<DEVICE ID>",
-    "ContentItem": {
-      "isPresetable": true,
-      "source": "STANDBY"
-    }
+  "volume": {
+    "muteenabled": false,
+    "targetvolume": 17,
+    "actualvolume": 17,
+    "deviceID": "64CFD9E7CED2"
   }
 }
 ```
