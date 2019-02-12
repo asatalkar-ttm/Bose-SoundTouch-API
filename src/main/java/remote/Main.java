@@ -40,8 +40,6 @@ public class Main {
 //            String ipAddress = "";
 //            ipAddress = readWriteFile.readFileAsString("IPAddress.txt");
 //
-//            http://192.168.1.15
-//
 //            String response = apiCall.getEndPoint(ipAddress, endPoint);
 //
 //            // Store XML response in response.xml file
